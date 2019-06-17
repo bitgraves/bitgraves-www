@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/bitgraves-www/static/css/main.4a5a5004.chunk.css",
-    "main.js": "/bitgraves-www/static/js/main.bcc09c87.chunk.js",
-    "main.js.map": "/bitgraves-www/static/js/main.bcc09c87.chunk.js.map",
-    "runtime~main.js": "/bitgraves-www/static/js/runtime~main.27379c15.js",
-    "runtime~main.js.map": "/bitgraves-www/static/js/runtime~main.27379c15.js.map",
-    "static/js/2.65aa1cca.chunk.js": "/bitgraves-www/static/js/2.65aa1cca.chunk.js",
-    "static/js/2.65aa1cca.chunk.js.map": "/bitgraves-www/static/js/2.65aa1cca.chunk.js.map",
-    "index.html": "/bitgraves-www/index.html",
-    "precache-manifest.44b91fc245a7570190ce5ade3d0ac23a.js": "/bitgraves-www/precache-manifest.44b91fc245a7570190ce5ade3d0ac23a.js",
-    "service-worker.js": "/bitgraves-www/service-worker.js",
-    "static/css/main.4a5a5004.chunk.css.map": "/bitgraves-www/static/css/main.4a5a5004.chunk.css.map"
+    "main.css": "/static/css/main.4a5a5004.chunk.css",
+    "main.js": "/static/js/main.51cb9c9f.chunk.js",
+    "main.js.map": "/static/js/main.51cb9c9f.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/js/2.65aa1cca.chunk.js": "/static/js/2.65aa1cca.chunk.js",
+    "static/js/2.65aa1cca.chunk.js.map": "/static/js/2.65aa1cca.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.75c5bb8d4886d73a39cf4334c5404257.js": "/precache-manifest.75c5bb8d4886d73a39cf4334c5404257.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.4a5a5004.chunk.css.map": "/static/css/main.4a5a5004.chunk.css.map"
   }
 }
