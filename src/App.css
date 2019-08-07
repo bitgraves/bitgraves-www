@@ -19,6 +19,11 @@
     margin: 0 16px;
 }
 
+.highlight {
+    color: #cc3333;
+    margin: 0 16px;
+}
+
 @media (max-width: 600px) {
     .App {
         margin: 40px;

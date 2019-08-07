@@ -15,7 +15,7 @@ const RELEASES_LINKS = [
 ];
 
 const LIVE_LINKS = [
-  { name: 'Bit Graves / Leash / TBD', url: 'https://www.facebook.com/events/2501976026515799/', details: 'Aug 22, 2019 at Vermillion, Seattle' },
+  { name: 'Bit Graves / Housekeys / Leash', url: 'https://www.facebook.com/events/2501976026515799/', details: 'Aug 22, 2019 at Vermillion, Seattle', isHighlight: true },
   { name: 'Wayward Music Series', url: 'http://www.waywardmusic.org/event/you-died-tree-cathedral-bit-graves/', details: 'Apr 12, 2019 at The Chapel, Seattle, with YOU DIED! and Tree Cathedral' },
   { name: 'Modular Nights', url: 'https://www.facebook.com/events/244738663059273/', details: 'Nov 17, 2018 at Substation, Seattle' },
   { name: 'Wayward Music Series', url: 'http://www.waywardmusic.org/event/bit-graves-jordan-rundle-marcus-price/', details: 'Jun 15, 2018 at The Chapel, Seattle, with Jordan Rundle and Marcus Price' },
@@ -31,12 +31,15 @@ class App extends Component {
   _renderLinks = (links) => {
     return (
       <ul>
-        {links.map(link => (
-          <li className="link-item">
-            <a href={link.url} target="_blank" rel="noopener noreferrer">{link.name}</a>
-            {link.details ? (<span className="details">{link.details}</span>) : null}
-          </li>
-        ))}
+        {links.map(link => {
+          const detailsClass = (link.isHighlight) ? "highlight" : "details";
+          return (
+            <li className="link-item">
+              <a href={link.url} target="_blank" rel="noopener noreferrer">{link.name}</a>
+              {link.details ? (<span className={detailsClass}>{link.details}</span>) : null}
+            </li>
+          );
+        })}
       </ul>
     );
   };
