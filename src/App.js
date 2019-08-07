@@ -15,6 +15,7 @@ const RELEASES_LINKS = [
 ];
 
 const LIVE_LINKS = [
+  { name: 'Bit Graves / Leash / TBD', url: 'https://www.facebook.com/events/2501976026515799/', details: 'Aug 22, 2019 at Vermillion, Seattle' },
   { name: 'Wayward Music Series', url: 'http://www.waywardmusic.org/event/you-died-tree-cathedral-bit-graves/', details: 'Apr 12, 2019 at The Chapel, Seattle, with YOU DIED! and Tree Cathedral' },
   { name: 'Modular Nights', url: 'https://www.facebook.com/events/244738663059273/', details: 'Nov 17, 2018 at Substation, Seattle' },
   { name: 'Wayward Music Series', url: 'http://www.waywardmusic.org/event/bit-graves-jordan-rundle-marcus-price/', details: 'Jun 15, 2018 at The Chapel, Seattle, with Jordan Rundle and Marcus Price' },
