@@ -23,6 +23,10 @@ const LIVE_LINKS = [
   { name: 'Harmony Korine Rétrospective', url: 'https://www.centrepompidou.fr/cpv/agenda/event.action?param.id=FR_R-c0df2f56ea7a6fce6a17a459145ac63f&param.idSource=FR_E-c0df2f56ea7a6fce6a17a459145ac63f', details: 'Oct 6 - Nov 15, 2017, installation with video at Centre Pompidou, Paris' },
 ];
 
+const WRITING_LINKS = [
+    { name: 'Implementing a Pitch Shifter in SuperCollider', url: 'https://reading.supply/@ben/implementing-a-pitch-shifter-in-supercollider-Z0fcAX', details: 'May 2019' },
+];
+
 const VIDEO_LINKS = [
   { name: 'Live @ Wayward Music Series', url: 'https://www.youtube.com/watch?v=gt75p-YhP8M', details: 'full performance, Jun 15, 2018' },
   { name: 'Processing Chamber', url: 'https://www.youtube.com/watch?v=WAK9QDFg2so', details: 'in the living room, Aug 28, 2017' },
@@ -60,6 +64,7 @@ class App extends Component {
         {this._renderSection('bit graves', PRESENCE_LINKS)}
         {this._renderSection('releases', RELEASES_LINKS)}
         {this._renderSection('performances and installations', LIVE_LINKS)}
+        {this._renderSection('writing', WRITING_LINKS)}
         {this._renderSection('video', VIDEO_LINKS)}
       </div>
     );
