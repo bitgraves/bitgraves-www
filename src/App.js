@@ -24,13 +24,21 @@ const LIVE_LINKS = [
 ];
 
 const WRITING_LINKS = [
-    { name: 'Implementing a Pitch Shifter in SuperCollider', url: 'https://reading.supply/@ben/implementing-a-pitch-shifter-in-supercollider-Z0fcAX', details: 'May 2019' },
+  { name: 'Recording Bit Graves at Nels Motel', url: '#', details: 'Jan 2020', isHighlight: true },
+  { name: 'Implementing a Pitch Shifter in SuperCollider', url: 'https://reading.supply/@ben/implementing-a-pitch-shifter-in-supercollider-Z0fcAX', details: 'May 2019' },
 ];
 
 const VIDEO_LINKS = [
   { name: 'Live @ Wayward Music Series', url: 'https://www.youtube.com/watch?v=gt75p-YhP8M', details: 'full performance, Jun 15, 2018' },
   { name: 'Processing Chamber', url: 'https://www.youtube.com/watch?v=WAK9QDFg2so', details: 'in the living room, Aug 28, 2017' },
 ];
+
+const SOCIAL_PREVIEW = {
+  title: 'Recording Bit Graves at Nels Motel',
+  caption: 'We wrote a short blog (with photos) documenting our experience bringing Bit Graves to a recording studio and our process during that time.',
+  category: 'Writing and process, January 2020',
+  url: '#',
+};
 
 class App extends Component {
   _renderLinks = (links) => {
@@ -58,13 +66,29 @@ class App extends Component {
     );
   };
 
+  _maybeRenderSocialPreview = () => {
+    if (!SOCIAL_PREVIEW || !SOCIAL_PREVIEW.title) return null;
+    const { title, url, caption, category } = SOCIAL_PREVIEW;
+    return (
+      <div id="SocialCTA">
+	<a href={url}><div className="previewImg" /></a>
+	<div className="previewDetails">
+	  <a href={url} className="previewTitle">{title}</a>
+	  <p className="previewCaption">{caption}</p>
+	  <p className="previewCategory">{category}</p>
+	</div>
+      </div>
+    );
+  };
+
   render() {
     return (
       <div className="App">
+	{this._maybeRenderSocialPreview()}
         {this._renderSection('bit graves', PRESENCE_LINKS)}
         {this._renderSection('releases', RELEASES_LINKS)}
         {this._renderSection('performances and installations', LIVE_LINKS)}
-        {this._renderSection('writing', WRITING_LINKS)}
+        {this._renderSection('writing and process', WRITING_LINKS)}
         {this._renderSection('video', VIDEO_LINKS)}
       </div>
     );

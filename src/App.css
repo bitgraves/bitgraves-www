@@ -1,12 +1,12 @@
 .App {
     font-family: monospace, serif;
     font-size: 1rem;
-    margin: 100px;
     color: #000000;
+    padding: 64px 0 64px 0;
 }
 
 .section {
-    margin-top: 32px;
+    margin: 32px 100px 0 100px;;
 }
 
 .link-item {
@@ -24,10 +24,54 @@
     margin: 0 16px;
 }
 
+#SocialCTA {
+    display: none;
+    background: #ddd;
+    padding: 24px 100px;
+}
+
+.previewImg {
+    display: block;
+    background: #fff;
+    width: 112px;
+    height: 112px;
+    margin-right: 16px;
+    border: 1px solid #000;
+    background-image: url('./assets/social-preview.png');
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.previewDetails {
+}
+
+.previewTitle {
+    margin: 0;
+}
+
+.previewCaption {
+    margin: 12px 0;
+    font-size: 0.7rem;
+}
+
+.previewCategory {
+    color: #333;
+    font-size: 0.7rem;
+}
+
 @media (max-width: 600px) {
     .App {
-        margin: 40px;
         font-size: 0.9rem;
+	padding: 0;
+    }
+
+    #SocialCTA {
+	display: flex;
+	padding: 24px 40px;
+    }
+    
+    .section {
+	margin: 32px 40px 0 40px;
     }
 
     .link-item {
