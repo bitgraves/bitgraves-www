@@ -24,7 +24,7 @@ const LIVE_LINKS = [
 ];
 
 const WRITING_LINKS = [
-  { name: 'Recording Bit Graves at Nels Motel', url: '#', details: 'Jan 2020', isHighlight: true },
+  { name: 'Recording Bit Graves at Nels Motel', url: 'https://reading.supply/@ben/recording-bit-graves-at-nels-motel-VTNQcq', details: 'Jan 2020', isHighlight: true },
   { name: 'Implementing a Pitch Shifter in SuperCollider', url: 'https://reading.supply/@ben/implementing-a-pitch-shifter-in-supercollider-Z0fcAX', details: 'May 2019' },
 ];
 
@@ -35,9 +35,9 @@ const VIDEO_LINKS = [
 
 const SOCIAL_PREVIEW = {
   title: 'Recording Bit Graves at Nels Motel',
-  caption: 'We wrote a short blog (with photos) documenting our experience bringing Bit Graves to a recording studio and our process during that time.',
+  caption: 'We wrote a short blog documenting our experience and process as we tracked a record.',
   category: 'Writing and process, January 2020',
-  url: '#',
+  url: 'https://reading.supply/@ben/recording-bit-graves-at-nels-motel-VTNQcq',
 };
 
 class App extends Component {

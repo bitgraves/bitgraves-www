@@ -26,8 +26,8 @@
 
 #SocialCTA {
     display: none;
-    background: #ddd;
-    padding: 24px 100px;
+    background: #e2e2e2;
+    padding: 36px 100px;
 }
 
 .previewImg {
@@ -67,7 +67,7 @@
 
     #SocialCTA {
 	display: flex;
-	padding: 24px 40px;
+	padding: 36px 40px;
     }
     
     .section {
