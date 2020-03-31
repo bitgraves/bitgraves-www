@@ -6,6 +6,7 @@ const PRESENCE_LINKS = [
   { name: 'SoundCloud', url: 'https://soundcloud.com/bitgraves' },
   { name: 'Instagram', url: 'https://www.instagram.com/bitgraves/' },
   { name: 'GitHub', url: 'http://github.com/bitgraves' },
+  { name: 'Twitch', url: 'http://twitch.tv/bitgraves', details: 'Live March 31', isHighlight: true },
 ];
 
 const RELEASES_LINKS = [
@@ -24,7 +25,7 @@ const LIVE_LINKS = [
 ];
 
 const WRITING_LINKS = [
-  { name: 'Recording Bit Graves at Nels Motel', url: 'https://reading.supply/@ben/recording-bit-graves-at-nels-motel-VTNQcq', details: 'Jan 2020', isHighlight: true },
+  { name: 'Recording Bit Graves at Nels Motel', url: 'https://reading.supply/@ben/recording-bit-graves-at-nels-motel-VTNQcq', details: 'Jan 2020' },
   { name: 'Implementing a Pitch Shifter in SuperCollider', url: 'https://reading.supply/@ben/implementing-a-pitch-shifter-in-supercollider-Z0fcAX', details: 'May 2019' },
 ];
 
