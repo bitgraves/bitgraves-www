@@ -10,6 +10,7 @@ const PRESENCE_LINKS = [
 ];
 
 const RELEASES_LINKS = [
+  { name: 'LP', details: 'Forthcoming in 2020' },
   { name: 'Frames 1-3', url: 'https://bitgraves.bandcamp.com/album/frames-1-3', details: 'Dec 2018' },
   { name: 'Entropic Stare', url: 'https://bitgraves.bandcamp.com/album/entropic-stare', details: 'May 2018' },
   { name: 'Recovery Sequence', url: 'https://bitgraves.bandcamp.com/album/recovery-sequence', details: 'Oct 2017' },
