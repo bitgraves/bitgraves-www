@@ -6,7 +6,7 @@ const PRESENCE_LINKS = [
   { name: 'SoundCloud', url: 'https://soundcloud.com/bitgraves' },
   { name: 'Instagram', url: 'https://www.instagram.com/bitgraves/' },
   { name: 'GitHub', url: 'http://github.com/bitgraves' },
-  { name: 'Twitch', url: 'http://twitch.tv/bitgraves', details: 'Live March 31', isHighlight: true },
+  // { name: 'Twitch', url: 'http://twitch.tv/bitgraves', details: 'Live March 31' },
 ];
 
 const RELEASES_LINKS = [
@@ -26,6 +26,7 @@ const LIVE_LINKS = [
 ];
 
 const WRITING_LINKS = [
+  { name: 'Assembling a Bit Graves Record: Mixing, Packaging, and More', url: 'https://reading.supply/@ben/assembling-a-bit-graves-record-mixing-packaging-and-more-bXWIMc', details: 'Apr 2020', isHighlight: true },
   { name: 'Recording Bit Graves at Nels Motel', url: 'https://reading.supply/@ben/recording-bit-graves-at-nels-motel-VTNQcq', details: 'Jan 2020' },
   { name: 'Implementing a Pitch Shifter in SuperCollider', url: 'https://reading.supply/@ben/implementing-a-pitch-shifter-in-supercollider-Z0fcAX', details: 'May 2019' },
 ];
@@ -36,10 +37,10 @@ const VIDEO_LINKS = [
 ];
 
 const SOCIAL_PREVIEW = {
-  title: 'Recording Bit Graves at Nels Motel',
-  caption: 'We wrote a short blog documenting our experience and process as we tracked a record.',
-  category: 'Writing and process, January 2020',
-  url: 'https://reading.supply/@ben/recording-bit-graves-at-nels-motel-VTNQcq',
+  title: 'Assembling a Bit Graves Record: Mixing, Packaging, and More',
+  caption: 'We wrote and photographed a series of vignettes about producing our record over the winter.',
+  category: 'Writing and process, April 2020',
+  url: 'https://reading.supply/@ben/assembling-a-bit-graves-record-mixing-packaging-and-more-bXWIMc',
 };
 
 class App extends Component {
