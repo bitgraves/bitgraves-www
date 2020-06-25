@@ -10,10 +10,10 @@ const PRESENCE_LINKS = [
 ];
 
 const RELEASES_LINKS = [
-  { name: 'LP', details: 'Forthcoming in 2020' },
-  { name: 'Frames 1-3', url: 'https://bitgraves.bandcamp.com/album/frames-1-3', details: 'Dec 2018' },
-  { name: 'Entropic Stare', url: 'https://bitgraves.bandcamp.com/album/entropic-stare', details: 'May 2018' },
-  { name: 'Recovery Sequence', url: 'https://bitgraves.bandcamp.com/album/recovery-sequence', details: 'Oct 2017' },
+  { name: 'Bit Graves', url: 'https://bitgraves.bandcamp.com/', details: 'LP, cassette / digital / streaming, June 2020' },
+  { name: 'Frames 1-3', url: 'https://bitgraves.bandcamp.com/album/frames-1-3', details: 'digital, Dec 2018' },
+  { name: 'Entropic Stare', url: 'https://bitgraves.bandcamp.com/album/entropic-stare', details: 'digital, May 2018' },
+  { name: 'Recovery Sequence', url: 'https://bitgraves.bandcamp.com/album/recovery-sequence', details: 'digital, Oct 2017' },
 ];
 
 // can use isHighlight: true
@@ -26,7 +26,7 @@ const LIVE_LINKS = [
 ];
 
 const WRITING_LINKS = [
-  { name: 'Assembling a Bit Graves Record: Mixing, Packaging, and More', url: 'https://reading.supply/@ben/assembling-a-bit-graves-record-mixing-packaging-and-more-bXWIMc', details: 'Apr 2020', isHighlight: true },
+  { name: 'Assembling a Bit Graves Record: Mixing, Packaging, and More', url: 'https://reading.supply/@ben/assembling-a-bit-graves-record-mixing-packaging-and-more-bXWIMc', details: 'Apr 2020' },
   { name: 'Recording Bit Graves at Nels Motel', url: 'https://reading.supply/@ben/recording-bit-graves-at-nels-motel-VTNQcq', details: 'Jan 2020' },
   { name: 'Implementing a Pitch Shifter in SuperCollider', url: 'https://reading.supply/@ben/implementing-a-pitch-shifter-in-supercollider-Z0fcAX', details: 'May 2019' },
 ];
@@ -37,10 +37,10 @@ const VIDEO_LINKS = [
 ];
 
 const SOCIAL_PREVIEW = {
-  title: 'Assembling a Bit Graves Record: Mixing, Packaging, and More',
-  caption: 'We wrote and photographed a series of vignettes about producing our record over the winter.',
-  category: 'Writing and process, April 2020',
-  url: 'https://reading.supply/@ben/assembling-a-bit-graves-record-mixing-packaging-and-more-bXWIMc',
+  title: 'Bit Graves: LP',
+  caption: 'Digital / Cassette / Streaming',
+  category: 'June 2020',
+  url: 'https://bitgraves.bandcamp.com',
 };
 
 class App extends Component {
