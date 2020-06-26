@@ -10,7 +10,7 @@ const PRESENCE_LINKS = [
 ];
 
 const RELEASES_LINKS = [
-  { name: 'Bit Graves', url: 'https://bitgraves.bandcamp.com/', details: 'LP, cassette / digital / streaming, June 2020' },
+  { name: 'Bit Graves', url: 'https://bitgraves.bandcamp.com/', details: 'Cassette / digital / streaming, June 2020' },
   { name: 'Frames 1-3', url: 'https://bitgraves.bandcamp.com/album/frames-1-3', details: 'digital, Dec 2018' },
   { name: 'Entropic Stare', url: 'https://bitgraves.bandcamp.com/album/entropic-stare', details: 'digital, May 2018' },
   { name: 'Recovery Sequence', url: 'https://bitgraves.bandcamp.com/album/recovery-sequence', details: 'digital, Oct 2017' },
@@ -37,7 +37,7 @@ const VIDEO_LINKS = [
 ];
 
 const SOCIAL_PREVIEW = {
-  title: 'Bit Graves: LP',
+  title: 'Bit Graves: Self titled',
   caption: 'Digital / Cassette / Streaming',
   category: 'June 2020',
   url: 'https://bitgraves.bandcamp.com',
