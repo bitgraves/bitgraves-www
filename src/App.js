@@ -38,7 +38,7 @@ const VIDEO_LINKS = [
 
 const SOCIAL_PREVIEW = {
   title: 'Bit Graves: Self titled',
-  caption: 'Digital / Cassette / Streaming',
+  caption: 'Cassette / digital / streaming',
   category: 'June 2020',
   url: 'https://bitgraves.bandcamp.com',
 };
