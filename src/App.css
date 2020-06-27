@@ -6,6 +6,15 @@
     max-width: 1800px;
 }
 
+.bio {
+    color: #666;
+    line-height: 1.4rem;
+}
+
+.bio span {
+    color: #000;
+}
+
 .section {
     margin: 32px 100px 0 100px;;
 }

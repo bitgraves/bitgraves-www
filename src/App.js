@@ -1,12 +1,19 @@
 import React, { Component } from 'react';
 import './App.css';
 
-const PRESENCE_LINKS = [
+const LISTEN_LINKS = [
   { name: 'Bandcamp', url: 'https://bitgraves.bandcamp.com/' },
   { name: 'SoundCloud', url: 'https://soundcloud.com/bitgraves' },
+  { name: 'Spotify', url: 'https://open.spotify.com/album/23IjKruZu0RnRqUUqOUy6V?si=ERsVz-8PR6Ccyzt8Uetofg' },
+  { name: 'Apple Music', url: 'https://itunes.apple.com/us/artist/1519835767' },
+  // { name: 'Tidal', url: 'https://store.tidal.com/us/album/146096838' },
+];
+const SOCIAL_LINKS = [
   { name: 'Instagram', url: 'https://www.instagram.com/bitgraves/' },
-  { name: 'GitHub', url: 'http://github.com/bitgraves' },
   // { name: 'Twitch', url: 'http://twitch.tv/bitgraves', details: 'Live March 31' },
+];
+const CODE_LINKS = [
+  { name: 'GitHub', url: 'http://github.com/bitgraves' },
 ];
 
 const RELEASES_LINKS = [
@@ -60,6 +67,19 @@ class App extends Component {
     );
   };
 
+  _renderLinksList = (links) => {
+    return (
+      <span>
+	{links.map(({ name, url }, ii) => (
+	  <React.Fragment>
+	    <a href={url} target="_blank" rel="noopener noreferrer">{name}</a>
+	    {(ii < links.length - 1) ? ', ' : null}
+	  </React.Fragment>
+	))}
+      </span>
+    );
+  };
+
   _renderSection = (name, links) => {
     return (
       <div className="section">
@@ -88,7 +108,11 @@ class App extends Component {
     return (
       <div className="App">
 	{this._maybeRenderSocialPreview()}
-        {this._renderSection('bit graves', PRESENCE_LINKS)}
+	<div className="section">
+	  <p className="bio"><span>Bit Graves</span> is an electronic music collaboration in Seattle.</p>
+	  <p className="bio"><span>Listen</span> on {this._renderLinksList(LISTEN_LINKS)}. Follow updates on {this._renderLinksList(SOCIAL_LINKS)}. Explore source code on {this._renderLinksList(CODE_LINKS)}.</p>
+	  <p><a href="mailto:'contact.bitgraves at gmail'">Contact</a>.</p>
+	</div>
         {this._renderSection('releases', RELEASES_LINKS)}
         {this._renderSection('performances and installations', LIVE_LINKS)}
         {this._renderSection('writing and process', WRITING_LINKS)}
