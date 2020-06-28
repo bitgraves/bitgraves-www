@@ -108,9 +108,9 @@ class App extends Component {
     return (
       <div className="App">
 	{this._maybeRenderSocialPreview()}
-	<div className="section">
-	  <p className="bio"><span>Bit Graves</span> is an electronic music collaboration in Seattle.</p>
-	  <p className="bio"><span>Listen</span> on {this._renderLinksList(LISTEN_LINKS)}. Follow updates on {this._renderLinksList(SOCIAL_LINKS)}. Explore source code on {this._renderLinksList(CODE_LINKS)}.</p>
+	<div className="section" id="bio">
+	  <p><span>Bit Graves</span> is an electronic music collaboration in Seattle.</p>
+	  <p><span>Listen</span> on {this._renderLinksList(LISTEN_LINKS)}. Follow updates on {this._renderLinksList(SOCIAL_LINKS)}. Explore source code on {this._renderLinksList(CODE_LINKS)}.</p>
 	  <p><a href="mailto:'contact.bitgraves at gmail'">Contact</a>.</p>
 	</div>
         {this._renderSection('releases', RELEASES_LINKS)}
