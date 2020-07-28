@@ -39,6 +39,7 @@ const WRITING_LINKS = [
 ];
 
 const VIDEO_LINKS = [
+  { name: 'Byax', url: 'https://youtu.be/SCnM5eTCtdc', details: 'live from our rehearsal space, July 27, 2020' },
   { name: 'Hexians', url: 'https://www.youtube.com/watch?v=OEYKgQQewc0', details: 'live from our rehearsal space, June 30, 2020' },
   { name: 'Live @ Wayward Music Series', url: 'https://www.youtube.com/watch?v=gt75p-YhP8M', details: 'full set, Jun 15, 2018' },
   { name: 'Processing Chamber', url: 'https://www.youtube.com/watch?v=WAK9QDFg2so', details: 'in the living room, Aug 28, 2017' },
