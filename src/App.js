@@ -25,6 +25,7 @@ const RELEASES_LINKS = [
 
 // can use isHighlight: true
 const LIVE_LINKS = [
+  { name: 'Wayward in Limbo #80', url: 'https://www.waywardmusic.org/?p=5880', details: 'Jan 8, 2021 (quarantine podcast)', isHighlight: true },
   { name: 'Bit Graves / Housekeys / Leash', url: 'https://www.facebook.com/events/2501976026515799/', details: 'Aug 22, 2019 at Vermillion, Seattle' },
   { name: 'Wayward Music Series', url: 'http://www.waywardmusic.org/event/you-died-tree-cathedral-bit-graves/', details: 'Apr 12, 2019 at The Chapel, Seattle, with YOU DIED! and Tree Cathedral' },
   { name: 'Modular Nights', url: 'https://www.facebook.com/events/244738663059273/', details: 'Nov 17, 2018 at Substation, Seattle' },
@@ -115,8 +116,8 @@ class App extends Component {
 	  <p><span>Listen</span> on {this._renderLinksList(LISTEN_LINKS)}. Follow updates on {this._renderLinksList(SOCIAL_LINKS)}. Explore source code on {this._renderLinksList(CODE_LINKS)}.</p>
 	  <p><a href="mailto:'contact.bitgraves at gmail'">Contact</a>.</p>
 	</div>
-        {this._renderSection('releases', RELEASES_LINKS)}
         {this._renderSection('performances and installations', LIVE_LINKS)}
+        {this._renderSection('releases', RELEASES_LINKS)}
         {this._renderSection('writing and process', WRITING_LINKS)}
         {this._renderSection('video', VIDEO_LINKS)}
       </div>
