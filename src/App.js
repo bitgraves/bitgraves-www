@@ -30,7 +30,7 @@ const LIVE_LINKS = [
   { name: 'Wayward Music Series', url: 'http://www.waywardmusic.org/event/you-died-tree-cathedral-bit-graves/', details: 'Apr 12, 2019 at The Chapel, Seattle, with YOU DIED! and Tree Cathedral' },
   { name: 'Modular Nights', url: 'https://www.facebook.com/events/244738663059273/', details: 'Nov 17, 2018 at Substation, Seattle' },
   { name: 'Wayward Music Series', url: 'http://www.waywardmusic.org/event/bit-graves-jordan-rundle-marcus-price/', details: 'Jun 15, 2018 at The Chapel, Seattle, with Jordan Rundle and Marcus Price' },
-  { name: 'Harmony Korine Rétrospective', url: 'https://www.centrepompidou.fr/cpv/agenda/event.action?param.id=FR_R-c0df2f56ea7a6fce6a17a459145ac63f&param.idSource=FR_E-c0df2f56ea7a6fce6a17a459145ac63f', details: 'Oct 6 - Nov 15, 2017, installation with video at Centre Pompidou, Paris' },
+  { name: 'Harmony Korine Rétrospective', url: 'https://www.centrepompidou.fr/en/program/calendar/event/cMgReqj', details: 'Oct 6 - Nov 15, 2017, music for short film installation "Drum Ass" at Centre Pompidou, Paris' },
 ];
 
 const WRITING_LINKS = [
@@ -42,16 +42,16 @@ const WRITING_LINKS = [
 const VIDEO_LINKS = [
   { name: 'Byax', url: 'https://youtu.be/SCnM5eTCtdc', details: 'live from our rehearsal space, July 27, 2020' },
   { name: 'Hexians', url: 'https://www.youtube.com/watch?v=OEYKgQQewc0', details: 'live from our rehearsal space, June 30, 2020' },
-  { name: 'Live @ Wayward Music Series', url: 'https://www.youtube.com/watch?v=gt75p-YhP8M', details: 'full set, Jun 15, 2018' },
   { name: 'Processing Chamber', url: 'https://www.youtube.com/watch?v=WAK9QDFg2so', details: 'in the living room, Aug 28, 2017' },
 ];
 
-const SOCIAL_PREVIEW = {
+const SOCIAL_PREVIEW = null;
+/* {
   title: 'Bit Graves: Self titled',
   caption: 'Cassette / digital / streaming',
   category: 'June 2020',
   url: 'https://bitgraves.bandcamp.com',
-};
+}; */
 
 class App extends Component {
   _renderLinks = (links) => {
@@ -116,7 +116,7 @@ class App extends Component {
 	  <p><span>Listen</span> on {this._renderLinksList(LISTEN_LINKS)}. Follow updates on {this._renderLinksList(SOCIAL_LINKS)}. Explore source code on {this._renderLinksList(CODE_LINKS)}.</p>
 	  <p><a href="mailto:'contact.bitgraves at gmail'">Contact</a>.</p>
 	</div>
-        {this._renderSection('performances and installations', LIVE_LINKS)}
+        {this._renderSection('selected appearances', LIVE_LINKS)}
         {this._renderSection('releases', RELEASES_LINKS)}
         {this._renderSection('writing and process', WRITING_LINKS)}
         {this._renderSection('video', VIDEO_LINKS)}
