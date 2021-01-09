@@ -25,6 +25,7 @@ const RELEASES_LINKS = [
 
 // can use isHighlight: true
 const LIVE_LINKS = [
+  { name: 'Strict Tempo - Mercury at Machinewerks Benefit', url: 'https://www.twitch.tv/voxsinistra', details: 'Jan 9-10, 2021', isHighlight: true },
   { name: 'Wayward in Limbo #80', url: 'https://www.waywardmusic.org/?p=5880', details: 'Jan 8, 2021 (quarantine podcast)', isHighlight: true },
   { name: 'Bit Graves / Housekeys / Leash', url: 'https://www.facebook.com/events/2501976026515799/', details: 'Aug 22, 2019 at Vermillion, Seattle' },
   { name: 'Wayward Music Series', url: 'http://www.waywardmusic.org/event/you-died-tree-cathedral-bit-graves/', details: 'Apr 12, 2019 at The Chapel, Seattle, with YOU DIED! and Tree Cathedral' },
