@@ -34,6 +34,7 @@ const LIVE_LINKS = [
 ];
 
 const WRITING_LINKS = [
+  { name: 'Controlling a drum machine with SuperCollider, MIDI, and Monome Norns', url: 'https://reading.supply/@ben/controlling-a-drum-machine-with-supercollider-midi-and-monome-norns-DiQUAW', details: 'Feb 2021', isHighlight: true },
   { name: 'Assembling a Bit Graves Record: Mixing, Packaging, and More', url: 'https://reading.supply/@ben/assembling-a-bit-graves-record-mixing-packaging-and-more-bXWIMc', details: 'Apr 2020' },
   { name: 'Recording Bit Graves at Nels Motel', url: 'https://reading.supply/@ben/recording-bit-graves-at-nels-motel-VTNQcq', details: 'Jan 2020' },
   { name: 'Implementing a Pitch Shifter in SuperCollider', url: 'https://reading.supply/@ben/implementing-a-pitch-shifter-in-supercollider-Z0fcAX', details: 'May 2019' },
