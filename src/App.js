@@ -41,7 +41,8 @@ const WRITING_LINKS = [
 ];
 
 const VIDEO_LINKS = [
-  { name: 'Strict Tempo - Mercury at Machinewerks Benefit', url: 'https://youtu.be/OXb8RemJH8c', details: 'Live set, Jan 10, 2021', isHighlight: true },
+  { name: 'Modular Nights', url: 'https://www.youtube.com/watch?t=1926&v=41I7iniHjI0&feature=youtu.be', details: 'Live set, Feb 6, 2021', isHighlight: true },
+  { name: 'Strict Tempo - Mercury at Machinewerks Benefit', url: 'https://youtu.be/OXb8RemJH8c', details: 'Live set, Jan 10, 2021' },
   { name: 'Byax', url: 'https://youtu.be/SCnM5eTCtdc', details: 'live from our rehearsal space, July 27, 2020' },
   { name: 'Hexians', url: 'https://www.youtube.com/watch?v=OEYKgQQewc0', details: 'live from our rehearsal space, June 30, 2020' },
   { name: 'Processing Chamber', url: 'https://www.youtube.com/watch?v=WAK9QDFg2so', details: 'in the living room, Aug 28, 2017' },
