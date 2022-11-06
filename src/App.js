@@ -35,6 +35,7 @@ const LIVE_LINKS = [
 ];
 
 const WRITING_LINKS = [
+  { name: 'Recording, and re-recording, the next Bit Graves album', url: 'https://reading.supply/@ben/recording-and-re-recording-the-next-bit-graves-album-Gq59OU', details: 'Nov 2022' },
   { name: 'Controlling a drum machine with SuperCollider, MIDI, and Monome Norns', url: 'https://reading.supply/@ben/controlling-a-drum-machine-with-supercollider-midi-and-monome-norns-DiQUAW', details: 'Feb 2021' },
   { name: 'Assembling a Bit Graves Record: Mixing, Packaging, and More', url: 'https://reading.supply/@ben/assembling-a-bit-graves-record-mixing-packaging-and-more-bXWIMc', details: 'Apr 2020' },
   { name: 'Recording Bit Graves at Nels Motel', url: 'https://reading.supply/@ben/recording-bit-graves-at-nels-motel-VTNQcq', details: 'Jan 2020' },
@@ -49,13 +50,12 @@ const VIDEO_LINKS = [
   { name: 'Processing Chamber', url: 'https://www.youtube.com/watch?v=WAK9QDFg2so', details: 'in the living room, Aug 28, 2017' },
 ];
 
-const SOCIAL_PREVIEW = null;
-/* {
-  title: 'Bit Graves: Self titled',
-  caption: 'Cassette / digital / streaming',
-  category: 'June 2020',
-  url: 'https://bitgraves.bandcamp.com',
-}; */
+const SOCIAL_PREVIEW = {
+  title: 'Recording, and re-recording, the next Bit Graves album',
+  caption: 'Essay and photos',
+  category: 'Nov 2022',
+  url: 'https://reading.supply/@ben/recording-and-re-recording-the-next-bit-graves-album-Gq59OU',
+};
 
 class App extends Component {
   _renderLinks = (links) => {
