@@ -25,7 +25,7 @@ const RELEASES_LINKS = [
 
 // can use isHighlight: true
 const LIVE_LINKS = [
-  { name: 'Unity Garnish / Bit Graves / EAMS', url: 'https://www.waywardmusic.org/?p=6564', details: 'Mar 4, 2022 at The Chapel, Seattle', isHighlight: true },
+  { name: 'Unity Garnish / Bit Graves / EAMS', url: 'https://soundcloud.com/bitgraves/march-4-2022-at-the-chapel-performance-space', details: 'Mar 4, 2022 at The Chapel, Seattle' },
   { name: 'Wayward in Limbo Podcast #80', url: 'https://www.waywardmusic.org/?p=5880', details: 'Jan 8, 2021' },
   { name: 'Bit Graves / Housekeys / Leash', url: 'https://www.facebook.com/events/2501976026515799/', details: 'Aug 22, 2019 at Vermillion, Seattle' },
   { name: 'Wayward Music Series', url: 'http://www.waywardmusic.org/event/you-died-tree-cathedral-bit-graves/', details: 'Apr 12, 2019 at The Chapel, Seattle, with YOU DIED! and Tree Cathedral' },
