@@ -111,9 +111,14 @@ const WRITING_LINKS = [
 const VIDEO_LINKS = [
   {
     name: 'Modular Nights',
+    url: 'https://youtu.be/JS4A9E98I-A?t=1451',
+    details: 'Live set, Dec 11, 2022',
+  },
+  /* {
+    name: 'Modular Nights',
     url: 'https://www.youtube.com/watch?t=1926&v=41I7iniHjI0&feature=youtu.be',
     details: 'Live set, Feb 6, 2021',
-  },
+  }, */
   {
     name: 'Strict Tempo - Mercury at Machinewerks Benefit',
     url: 'https://youtu.be/OXb8RemJH8c',
@@ -222,10 +227,10 @@ class App extends Component {
             <a href="mailto:'contact.bitgraves at gmail'">Contact</a>.
           </p>
         </div>
-        {this._renderSection('selected appearances', LIVE_LINKS)}
         {this._renderSection('releases', RELEASES_LINKS)}
         {this._renderSection('writing and process', WRITING_LINKS)}
         {this._renderSection('video', VIDEO_LINKS)}
+        {this._renderSection('selected appearances', LIVE_LINKS)}
       </div>
     );
   }
