@@ -19,24 +19,19 @@ const CODE_LINKS = [{ name: 'GitHub', url: 'http://github.com/bitgraves' }];
 
 const RELEASES_LINKS = [
   {
+    name: 'Murmur',
+    url: 'https://bitgraves.bandcamp.com/album/murmur',
+    details: 'Digital / streaming, releases June 2, 2023',
+  },
+  {
     name: 'Bit Graves',
-    url: 'https://bitgraves.bandcamp.com/',
+    url: 'https://bitgraves.bandcamp.com/album/bit-graves',
     details: 'Cassette / digital / streaming, June 2020',
   },
   {
-    name: 'Frames 1-3',
-    url: 'https://bitgraves.bandcamp.com/album/frames-1-3',
-    details: 'digital, Dec 2018',
-  },
-  {
-    name: 'Entropic Stare',
-    url: 'https://bitgraves.bandcamp.com/album/entropic-stare',
-    details: 'digital, May 2018',
-  },
-  {
-    name: 'Recovery Sequence',
-    url: 'https://bitgraves.bandcamp.com/album/recovery-sequence',
-    details: 'digital, Oct 2017',
+    name: 'Older stuff',
+    url: 'https://bitgraves.bandcamp.com/music',
+    details: '2017-2018',
   },
 ];
 
@@ -127,12 +122,12 @@ const VIDEO_LINKS = [
   {
     name: 'Byax',
     url: 'https://youtu.be/SCnM5eTCtdc',
-    details: 'live from our rehearsal space, July 27, 2020',
+    details: 'from our rehearsal space, July 27, 2020',
   },
   {
     name: 'Hexians',
     url: 'https://www.youtube.com/watch?v=OEYKgQQewc0',
-    details: 'live from our rehearsal space, June 30, 2020',
+    details: 'from our rehearsal space, June 30, 2020',
   },
   {
     name: 'Processing Chamber',
@@ -142,10 +137,10 @@ const VIDEO_LINKS = [
 ];
 
 const SOCIAL_PREVIEW = {
-  title: 'Recording, and re-recording, the next Bit Graves album',
-  caption: 'Essay and photos',
-  category: 'Nov 2022',
-  url: 'https://reading.supply/@ben/recording-and-re-recording-the-next-bit-graves-album-Gq59OU',
+  title: 'Bit Graves - Murmur',
+  caption: 'New album releases digitally on June 2, 2023',
+  category: '',
+  url: 'https://bitgraves.bandcamp.com/album/murmur',
 };
 
 class App extends Component {
