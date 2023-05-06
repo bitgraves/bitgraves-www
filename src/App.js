@@ -1,6 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
 
+const PRESS_LINKS = [
+  {
+    name: "Bit Graves' Cosmos-Friendly Synth Excursion",
+    url: 'https://www.thestranger.com/music/2023/05/05/78978970/irreversible-entanglements-explosive-sun-ra-cover-and-bit-graves-cosmos-friendly-synth-excursion',
+    details: 'Dave Segal for The Stranger, May 2023',
+  },
+];
+
 const LISTEN_LINKS = [
   { name: 'Bandcamp', url: 'https://bitgraves.bandcamp.com/' },
   { name: 'SoundCloud', url: 'https://soundcloud.com/bitgraves' },
@@ -104,6 +112,11 @@ const WRITING_LINKS = [
 ];
 
 const VIDEO_LINKS = [
+  {
+    name: 'pluck2',
+    url: 'https://youtu.be/UTMJtcyKYT0',
+    details: 'Hydra visualizer, May 2023',
+  },
   {
     name: 'Modular Nights',
     url: 'https://youtu.be/JS4A9E98I-A?t=1451',
@@ -223,6 +236,7 @@ class App extends Component {
           </p>
         </div>
         {this._renderSection('releases', RELEASES_LINKS)}
+        {this._renderSection('press', PRESS_LINKS)}
         {this._renderSection('writing and process', WRITING_LINKS)}
         {this._renderSection('video', VIDEO_LINKS)}
         {this._renderSection('selected appearances', LIVE_LINKS)}
