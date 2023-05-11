@@ -212,7 +212,24 @@ class App extends Component {
             {title}
           </a>
           <p className="previewCaption">{caption}</p>
-          <p className="previewCategory">{category}</p>
+          <ul className="previewCategory">
+            {/* TODO: temp for murmur */}
+            <li>
+              Watch the{' '}
+              <a href="https://youtu.be/UTMJtcyKYT0" target="_blank" rel="noopener noreferrer">
+                hydra visualizer for pluck2
+              </a>
+            </li>
+            <li>
+              Read coverage in{' '}
+              <a
+                href="https://www.thestranger.com/music/2023/05/05/78978970/irreversible-entanglements-explosive-sun-ra-cover-and-bit-graves-cosmos-friendly-synth-excursion"
+                target="_blank"
+                rel="noopener noreferrer">
+                The Stranger
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     );
