@@ -85,6 +85,11 @@ const LIVE_LINKS = [
 
 const WRITING_LINKS = [
   {
+    name: 'Creating cover art and hydra videos for Murmur',
+    url: 'https://reading.supply/@ben/bit-graves-creating-cover-art-and-hydra-videos-for-murmur-p5hQ3D',
+    details: 'May 2023',
+  },
+  {
     name: 'Recording, and re-recording, the next Bit Graves album',
     url: 'https://reading.supply/@ben/recording-and-re-recording-the-next-bit-graves-album-Gq59OU',
     details: 'Nov 2022',
@@ -217,7 +222,7 @@ class App extends Component {
             {title}
           </a>
           <p className="previewCaption">{caption}</p>
-          <ul className="previewCategory">
+          <ul className="previewCategory previewCategoryList">
             {/* TODO: temp for murmur */}
             <li>
               Watch the{' '}
@@ -232,6 +237,15 @@ class App extends Component {
                 target="_blank"
                 rel="noopener noreferrer">
                 The Stranger
+              </a>
+            </li>
+            <li>
+              Read an{' '}
+              <a
+                href="https://reading.supply/@ben/bit-graves-creating-cover-art-and-hydra-videos-for-murmur-p5hQ3D"
+                target="_blank"
+                rel="noopener noreferrer">
+                essay about the cover art
               </a>
             </li>
           </ul>
