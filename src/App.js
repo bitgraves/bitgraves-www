@@ -29,7 +29,7 @@ const RELEASES_LINKS = [
   {
     name: 'Murmur',
     url: 'https://bitgraves.bandcamp.com/album/murmur',
-    details: 'Digital / streaming, releases June 2, 2023',
+    details: 'Digital / streaming, June 2, 2023',
   },
   {
     name: 'Bit Graves',
@@ -161,7 +161,7 @@ const VIDEO_LINKS = [
 
 const SOCIAL_PREVIEW = {
   title: 'Bit Graves - Murmur',
-  caption: 'New album releases digitally on June 2, 2023',
+  caption: 'Digital album / June 2023',
   category: '',
   url: 'https://bitgraves.bandcamp.com/album/murmur',
 };
@@ -225,27 +225,21 @@ class App extends Component {
           <ul className="previewCategory previewCategoryList">
             {/* TODO: temp for murmur */}
             <li>
+              <a href="https://bitgraves.bandcamp.com/album/murmur">Listen now on Bandcamp</a>
+            </li>
+            <li>
               Watch the{' '}
               <a href="https://youtu.be/E-kVV_5_Th4" target="_blank" rel="noopener noreferrer">
-                hydra visualizer for bigfish
+                hydra visualizer on YouTube
               </a>
             </li>
             <li>
-              Read coverage in{' '}
+              Read{' '}
               <a
                 href="https://www.thestranger.com/music/2023/05/05/78978970/irreversible-entanglements-explosive-sun-ra-cover-and-bit-graves-cosmos-friendly-synth-excursion"
                 target="_blank"
                 rel="noopener noreferrer">
-                The Stranger
-              </a>
-            </li>
-            <li>
-              Read an{' '}
-              <a
-                href="https://reading.supply/@ben/bit-graves-creating-cover-art-and-hydra-videos-for-murmur-p5hQ3D"
-                target="_blank"
-                rel="noopener noreferrer">
-                essay about the cover art
+                coverage in The Stranger
               </a>
             </li>
           </ul>
