@@ -118,6 +118,11 @@ const WRITING_LINKS = [
 
 const VIDEO_LINKS = [
   {
+    name: 'baikal',
+    url: 'https://youtu.be/HjcY6ooLjvM',
+    details: 'Hydra visualizer, June 2023',
+  },
+  {
     name: 'bigfish',
     url: 'https://youtu.be/E-kVV_5_Th4',
     details: 'Hydra visualizer, May 2023',
@@ -229,7 +234,7 @@ class App extends Component {
             </li>
             <li>
               Watch the{' '}
-              <a href="https://youtu.be/E-kVV_5_Th4" target="_blank" rel="noopener noreferrer">
+              <a href="https://youtu.be/HjcY6ooLjvM" target="_blank" rel="noopener noreferrer">
                 hydra visualizer on YouTube
               </a>
             </li>
