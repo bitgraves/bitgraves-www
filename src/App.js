@@ -46,6 +46,12 @@ const RELEASES_LINKS = [
 // can use isHighlight: true
 const LIVE_LINKS = [
   {
+    name: 'Bit Graves / Benjamin Marx / Mason Lynass',
+    url: 'https://www.waywardmusic.org/?p=7685',
+    details: 'Sep 15, 2023 at The Chapel, Seattle',
+    isHighlight: true,
+  },
+  {
     name: 'Unity Garnish / Bit Graves / EAMS',
     url: 'https://soundcloud.com/bitgraves/march-4-2022-at-the-chapel-performance-space',
     details: 'Mar 4, 2022 at The Chapel, Seattle',
