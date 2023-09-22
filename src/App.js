@@ -49,7 +49,6 @@ const LIVE_LINKS = [
     name: 'Bit Graves / Benjamin Marx / Mason Lynass',
     url: 'https://www.waywardmusic.org/?p=7685',
     details: 'Sep 15, 2023 at The Chapel, Seattle',
-    isHighlight: true,
   },
   {
     name: 'Unity Garnish / Bit Graves / EAMS',
@@ -124,6 +123,11 @@ const WRITING_LINKS = [
 
 const VIDEO_LINKS = [
   {
+    name: 'Live at the Wayward Music Series',
+    url: 'https://www.youtube.com/watch?v=VzJbEyBwEbE',
+    details: 'September 15, 2023',
+  },
+  {
     name: 'baikal',
     url: 'https://youtu.be/HjcY6ooLjvM',
     details: 'Hydra visualizer, June 2023',
@@ -171,10 +175,10 @@ const VIDEO_LINKS = [
 ];
 
 const SOCIAL_PREVIEW = {
-  title: 'Bit Graves - Murmur',
-  caption: 'Digital album / June 2023',
+  title: 'Bit Graves - Live at the Wayward Music Series',
+  caption: 'Live video / Sep 15, 2023',
   category: '',
-  url: 'https://bitgraves.bandcamp.com/album/murmur',
+  url: 'https://www.youtube.com/watch?v=VzJbEyBwEbE',
 };
 
 class App extends Component {
@@ -233,27 +237,6 @@ class App extends Component {
             {title}
           </a>
           <p className="previewCaption">{caption}</p>
-          <ul className="previewCategory previewCategoryList">
-            {/* TODO: temp for murmur */}
-            <li>
-              <a href="https://bitgraves.bandcamp.com/album/murmur">Listen now on Bandcamp</a>
-            </li>
-            <li>
-              Watch the{' '}
-              <a href="https://youtu.be/HjcY6ooLjvM" target="_blank" rel="noopener noreferrer">
-                hydra visualizer on YouTube
-              </a>
-            </li>
-            <li>
-              Read{' '}
-              <a
-                href="https://www.thestranger.com/music/2023/05/05/78978970/irreversible-entanglements-explosive-sun-ra-cover-and-bit-graves-cosmos-friendly-synth-excursion"
-                target="_blank"
-                rel="noopener noreferrer">
-                coverage in The Stranger
-              </a>
-            </li>
-          </ul>
         </div>
       </div>
     );
