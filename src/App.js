@@ -90,6 +90,11 @@ const LIVE_LINKS = [
 
 const WRITING_LINKS = [
   {
+    name: 'Creating an audiovisual set: Performing with hydra, while also performing music',
+    url: 'https://reading.supply/@ben/creating-an-audiovisual-set-performing-with-hydra-while-also-performing-music-v5Enf1',
+    details: 'Sep 2023',
+  },
+  {
     name: 'Creating cover art and hydra videos for Murmur',
     url: 'https://reading.supply/@ben/bit-graves-creating-cover-art-and-hydra-videos-for-murmur-p5hQ3D',
     details: 'May 2023',
