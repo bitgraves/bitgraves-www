@@ -46,6 +46,11 @@ const RELEASES_LINKS = [
 // can use isHighlight: true
 const LIVE_LINKS = [
   {
+    name: 'Bit Graves / An Anomalous Wave / NV Electronica',
+    details: 'Feb 22, 2024 at Vermillion, Seattle',
+    isHighlight: true,
+  },
+  {
     name: 'Bit Graves / Benjamin Marx / Mason Lynass',
     url: 'https://www.waywardmusic.org/?p=7685',
     details: 'Sep 15, 2023 at The Chapel, Seattle',
