@@ -47,6 +47,7 @@ const RELEASES_LINKS = [
 const LIVE_LINKS = [
   {
     name: 'Bit Graves / An Anomalous Wave / NV Electronica',
+    url: 'https://everout.com/seattle/events/bit-graves-an-anomalous-wave-and-nv-electronica/e169254/',
     details: 'Feb 22, 2024 at Vermillion, Seattle',
     isHighlight: true,
   },
