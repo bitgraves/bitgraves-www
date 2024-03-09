@@ -46,10 +46,14 @@ const RELEASES_LINKS = [
 // can use isHighlight: true
 const LIVE_LINKS = [
   {
+    name: 'Daughters of Cacophony / Bit Graves / Peopling / SPLASTEEN',
+    details: 'Apr 28, 2024 at Bad Bar, Seattle',
+    isHighlight: true,
+  },
+  {
     name: 'Bit Graves / An Anomalous Wave / NV Electronica',
     url: 'https://everout.com/seattle/events/bit-graves-an-anomalous-wave-and-nv-electronica/e169254/',
     details: 'Feb 22, 2024 at Vermillion, Seattle',
-    isHighlight: true,
   },
   {
     name: 'Bit Graves / Benjamin Marx / Mason Lynass',
