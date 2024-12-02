@@ -46,9 +46,13 @@ const RELEASES_LINKS = [
 // can use isHighlight: true
 const LIVE_LINKS = [
   {
+    name: 'V. Vecker / Bit Graves / Archival Image / Dion-Egg',
+    details: 'Dec 12, 2024 at Casa del Xolo, Seattle',
+    isHighlight: true,
+  },
+  {
     name: 'Daughters of Cacophony / Bit Graves / Peopling / SPLASTEEN',
     details: 'Apr 28, 2024 at Bad Bar, Seattle',
-    isHighlight: true,
   },
   {
     name: 'Bit Graves / An Anomalous Wave / NV Electronica',
@@ -278,7 +282,7 @@ class App extends Component {
         {this._renderSection('press', PRESS_LINKS)}
         {this._renderSection('writing and process', WRITING_LINKS)}
         {this._renderSection('video', VIDEO_LINKS)}
-        {this._renderSection('selected appearances', LIVE_LINKS)}
+        {this._renderSection('appearances', LIVE_LINKS)}
       </div>
     );
   }
