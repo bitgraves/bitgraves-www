@@ -46,9 +46,14 @@ const RELEASES_LINKS = [
 // can use isHighlight: true
 const LIVE_LINKS = [
   {
+    name: 'Georgetown Steam Plant Science Fair',
+    details: 'Sep 20, 2025',
+    isHighlight: true,
+    url: 'https://www.georgetownsteamplant.org/2025',
+  },
+  {
     name: 'V. Vecker / Bit Graves / Archival Image / Dion-Egg',
     details: 'Dec 12, 2024 at Casa del Xolo, Seattle',
-    isHighlight: true,
   },
   {
     name: 'Daughters of Cacophony / Bit Graves / Peopling / SPLASTEEN',
@@ -245,7 +250,7 @@ class App extends Component {
 
   _maybeRenderSocialPreview = () => {
     if (!SOCIAL_PREVIEW || !SOCIAL_PREVIEW.title) return null;
-    const { title, url, caption, category } = SOCIAL_PREVIEW;
+    const { title, url, caption } = SOCIAL_PREVIEW;
     return (
       <div id="SocialCTA">
         <a href={url}>
