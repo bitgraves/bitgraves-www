@@ -48,7 +48,6 @@ const LIVE_LINKS = [
   {
     name: 'Georgetown Steam Plant Science Fair',
     details: 'Sep 20, 2025',
-    isHighlight: true,
     url: 'https://www.georgetownsteamplant.org/2025',
   },
   {
@@ -89,11 +88,11 @@ const LIVE_LINKS = [
     url: 'http://www.waywardmusic.org/event/you-died-tree-cathedral-bit-graves/',
     details: 'Apr 12, 2019 at The Chapel, Seattle, with YOU DIED! and Tree Cathedral',
   },
-  {
+  /* {
     name: 'Modular Nights',
     url: 'https://www.facebook.com/events/244738663059273/',
     details: 'Nov 17, 2018 at Substation, Seattle',
-  },
+  }, */
   {
     name: 'Wayward Music Series',
     url: 'http://www.waywardmusic.org/event/bit-graves-jordan-rundle-marcus-price/',
