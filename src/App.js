@@ -23,6 +23,8 @@ const SOCIAL_LINKS = [
   { name: 'Instagram', url: 'https://www.instagram.com/bitgraves/' },
   // { name: 'Twitch', url: 'http://twitch.tv/bitgraves', details: 'Live March 31' },
 ];
+
+// eslint-disable-next-line
 const CODE_LINKS = [{ name: 'GitHub', url: 'http://github.com/bitgraves' }];
 
 const RELEASES_LINKS = [
@@ -266,6 +268,7 @@ const SocialPreview = () => {
 };
 
 const App = () => {
+  const [moreExpanded, setMoreExpanded] = React.useReducer(() => true, false);
   return (
     <div className="App">
       <SocialPreview />
@@ -275,8 +278,7 @@ const App = () => {
         </p>
         <p>
           <span>Listen</span> on <LinksList links={LISTEN_LINKS} />. Follow updates on{' '}
-          <LinksList links={SOCIAL_LINKS} />. Explore source code on{' '}
-          <LinksList links={CODE_LINKS} />.
+          <LinksList links={SOCIAL_LINKS} />.
         </p>
         <p>
           <a href="mailto:'contact.bitgraves at gmail'">Contact</a>.
@@ -284,9 +286,17 @@ const App = () => {
       </div>
       <Section name="releases" links={RELEASES_LINKS} />
       <Section name="press" links={PRESS_LINKS} />
-      <Section name="writing and process" links={WRITING_LINKS} />
-      <Section name="video" links={VIDEO_LINKS} />
-      <Section name="appearances" links={LIVE_LINKS} />
+      {moreExpanded ? (
+        <>
+          <Section name="writing and process" links={WRITING_LINKS} />
+          <Section name="video" links={VIDEO_LINKS} />
+          <Section name="past appearances" links={LIVE_LINKS} />
+        </>
+      ) : (
+        <p id="moreButton" className="section" onClick={setMoreExpanded}>
+          more?
+        </p>
+      )}
     </div>
   );
 };
