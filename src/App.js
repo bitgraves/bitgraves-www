@@ -197,12 +197,13 @@ const VIDEO_LINKS = [
   },
 ];
 
-const SOCIAL_PREVIEW = {
+let SOCIAL_PREVIEW;
+/* const SOCIAL_PREVIEW = {
   title: 'Bit Graves - Live at the Wayward Music Series',
   caption: 'Live video / Sep 15, 2023',
   category: '',
   url: 'https://www.youtube.com/watch?v=VzJbEyBwEbE',
-};
+}; */
 
 class App extends Component {
   _renderLinks = (links) => {
@@ -248,7 +249,7 @@ class App extends Component {
   };
 
   _maybeRenderSocialPreview = () => {
-    if (!SOCIAL_PREVIEW || !SOCIAL_PREVIEW.title) return null;
+    if (!SOCIAL_PREVIEW?.title) return null;
     const { title, url, caption } = SOCIAL_PREVIEW;
     return (
       <div id="SocialCTA">
