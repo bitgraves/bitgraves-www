@@ -1,6 +1,13 @@
 import React from 'react';
 import './App.css';
 
+const NEWS_LINKS = [
+  {
+    name: 'Electric Blue Fest',
+    details: 'Apr 18, 2026 at Black Lodge',
+  },
+];
+
 const PRESS_LINKS = [
   {
     name: "Bit Graves' Cosmos-Friendly Synth Excursion",
@@ -284,6 +291,7 @@ const App = () => {
           <a href="mailto:'contact.bitgraves at gmail'">Contact</a>.
         </p>
       </div>
+      <Section name="upcoming" links={NEWS_LINKS} />
       <Section name="releases" links={RELEASES_LINKS} />
       <Section name="press" links={PRESS_LINKS} />
       {moreExpanded ? (
