@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 
 const PRESS_LINKS = [
@@ -205,92 +205,90 @@ let SOCIAL_PREVIEW;
   url: 'https://www.youtube.com/watch?v=VzJbEyBwEbE',
 }; */
 
-class App extends Component {
-  _renderLinks = (links) => {
-    return (
-      <ul>
-        {links.map((link) => {
-          const detailsClass = link.isHighlight ? 'highlight' : 'details';
-          return (
-            <li className="link-item">
-              <a href={link.url} target="_blank" rel="noopener noreferrer">
-                {link.name}
-              </a>
-              {link.details ? <span className={detailsClass}>{link.details}</span> : null}
-            </li>
-          );
-        })}
-      </ul>
-    );
-  };
-
-  _renderLinksList = (links) => {
-    return (
-      <span>
-        {links.map(({ name, url }, ii) => (
-          <React.Fragment>
-            <a href={url} target="_blank" rel="noopener noreferrer">
-              {name}
+const Links = ({ links }) => {
+  return (
+    <ul>
+      {links.map((link) => {
+        const detailsClass = link.isHighlight ? 'highlight' : 'details';
+        return (
+          <li className="link-item" key={link.name}>
+            <a href={link.url} target="_blank" rel="noopener noreferrer">
+              {link.name}
             </a>
-            {ii < links.length - 1 ? ', ' : null}
-          </React.Fragment>
-        ))}
-      </span>
-    );
-  };
+            {link.details ? <span className={detailsClass}>{link.details}</span> : null}
+          </li>
+        );
+      })}
+    </ul>
+  );
+};
 
-  _renderSection = (name, links) => {
-    return (
-      <div className="section">
-        <p>{name}</p>
-        {this._renderLinks(links)}
-      </div>
-    );
-  };
-
-  _maybeRenderSocialPreview = () => {
-    if (!SOCIAL_PREVIEW?.title) return null;
-    const { title, url, caption } = SOCIAL_PREVIEW;
-    return (
-      <div id="SocialCTA">
-        <a href={url}>
-          <div className="previewImg" />
-        </a>
-        <div className="previewDetails">
-          <a href={url} className="previewTitle">
-            {title}
+const LinksList = ({ links }) => {
+  return (
+    <span>
+      {links.map(({ name, url }, ii) => (
+        <React.Fragment key={name}>
+          <a href={url} target="_blank" rel="noopener noreferrer">
+            {name}
           </a>
-          <p className="previewCaption">{caption}</p>
-        </div>
-      </div>
-    );
-  };
+          {ii < links.length - 1 ? ', ' : null}
+        </React.Fragment>
+      ))}
+    </span>
+  );
+};
 
-  render() {
-    return (
-      <div className="App">
-        {this._maybeRenderSocialPreview()}
-        <div className="section" id="bio">
-          <p>
-            <span>Bit Graves</span> is an electronic music collaboration in Seattle.
-          </p>
-          <p>
-            <span>Listen</span> on {this._renderLinksList(LISTEN_LINKS)}. Follow updates on{' '}
-            {this._renderLinksList(SOCIAL_LINKS)}. Explore source code on{' '}
-            {this._renderLinksList(CODE_LINKS)}.
-          </p>
-          <p>
-            <a href="mailto:'contact.bitgraves at gmail'">Contact</a>.
-          </p>
-        </div>
-        {this._renderSection('releases', RELEASES_LINKS)}
-        {this._renderSection('press', PRESS_LINKS)}
-        {this._renderSection('writing and process', WRITING_LINKS)}
-        {this._renderSection('video', VIDEO_LINKS)}
-        {this._renderSection('appearances', LIVE_LINKS)}
+const Section = ({ name, links }) => {
+  return (
+    <div className="section">
+      <p>{name}</p>
+      <Links links={links} />
+    </div>
+  );
+};
+
+const SocialPreview = () => {
+  if (!SOCIAL_PREVIEW?.title) return null;
+  const { title, url, caption } = SOCIAL_PREVIEW;
+  return (
+    <div id="SocialCTA">
+      <a href={url}>
+        <div className="previewImg" />
+      </a>
+      <div className="previewDetails">
+        <a href={url} className="previewTitle">
+          {title}
+        </a>
+        <p className="previewCaption">{caption}</p>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
+
+const App = () => {
+  return (
+    <div className="App">
+      <SocialPreview />
+      <div className="section" id="bio">
+        <p>
+          <span>Bit Graves</span> is an electronic music collaboration in Seattle.
+        </p>
+        <p>
+          <span>Listen</span> on <LinksList links={LISTEN_LINKS} />. Follow updates on{' '}
+          <LinksList links={SOCIAL_LINKS} />. Explore source code on{' '}
+          <LinksList links={CODE_LINKS} />.
+        </p>
+        <p>
+          <a href="mailto:'contact.bitgraves at gmail'">Contact</a>.
+        </p>
+      </div>
+      <Section name="releases" links={RELEASES_LINKS} />
+      <Section name="press" links={PRESS_LINKS} />
+      <Section name="writing and process" links={WRITING_LINKS} />
+      <Section name="video" links={VIDEO_LINKS} />
+      <Section name="appearances" links={LIVE_LINKS} />
+    </div>
+  );
+};
 
 export default App;
