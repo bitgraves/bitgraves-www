@@ -1,10 +1,19 @@
 .App {
   font-family: monospace, serif;
   font-size: 0.9rem;
-  color: #000000;
+  color: #eeeeee;
+  background: #111;
   padding: 0 0 64px 0;
   margin: 0 auto;
   max-width: 1000px;
+}
+
+.App a {
+  color: #9ab8ff;
+}
+
+.App a:visited {
+  color: #b89aff;
 }
 
 #bio {
@@ -13,12 +22,12 @@
 }
 
 #bio p {
-  color: #666;
+  color: #999;
   line-height: 1.4rem;
 }
 
 #bio span {
-  color: #000;
+  color: #fff;
 }
 
 .section {
@@ -36,18 +45,18 @@
 }
 
 .details {
-  color: #999999;
+  color: #777777;
   margin: 0 16px;
 }
 
 .highlight {
-  color: #cc3333;
+  color: #ff6666;
   margin: 0 16px;
 }
 
 #SocialCTA {
   display: flex;
-  background: #e9e9e9;
+  background: #1e1e1e;
   padding: 36px 24px;
   flex-direction: row-reverse;
   justify-content: space-between;
@@ -55,11 +64,11 @@
 
 .previewImg {
   display: block;
-  background: #fff;
+  background: #000;
   width: 224px;
   height: 224px;
   margin-right: 16px;
-  border: 1px solid #000;
+  border: 1px solid #eee;
   background-image: url('./assets/social-preview.jpg');
   background-size: cover;
   background-position: 50% 50%;
@@ -78,7 +87,7 @@
 }
 
 .previewCategory {
-  color: #666;
+  color: #999;
   font-size: 0.9rem;
 }
 
@@ -107,7 +116,20 @@
 
   #SocialCTA {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 32px 16px;
+  }
+
+  .previewImg {
+    width: min(280px, 80vw);
+    height: min(280px, 80vw);
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .previewDetails {
+    text-align: center;
   }
 
   .previewCaption,
