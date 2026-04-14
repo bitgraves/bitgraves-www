@@ -18,12 +18,12 @@ const PRESS_LINKS = [
 
 const LISTEN_LINKS = [
   { name: 'Bandcamp', url: 'https://bitgraves.bandcamp.com/' },
-  { name: 'SoundCloud', url: 'https://soundcloud.com/bitgraves' },
-  {
+  /* {
     name: 'Spotify',
     url: 'https://open.spotify.com/album/23IjKruZu0RnRqUUqOUy6V?si=ERsVz-8PR6Ccyzt8Uetofg',
-  },
+  }, */
   { name: 'Apple Music', url: 'https://itunes.apple.com/us/artist/1519835767' },
+  // { name: 'SoundCloud', url: 'https://soundcloud.com/bitgraves' },
   // { name: 'Tidal', url: 'https://store.tidal.com/us/album/146096838' },
 ];
 const SOCIAL_LINKS = [
