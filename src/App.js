@@ -36,6 +36,12 @@ const CODE_LINKS = [{ name: 'GitHub', url: 'http://github.com/bitgraves' }];
 
 const RELEASES_LINKS = [
   {
+    name: 'Wake / Sleep',
+    url: 'https://bitgraves.bandcamp.com/album/wake-sleep',
+    details: 'Digital / streaming, May 1, 2026',
+    isHighlight: true,
+  },
+  {
     name: 'Murmur',
     url: 'https://bitgraves.bandcamp.com/album/murmur',
     details: 'Digital / streaming, June 2, 2023',
@@ -44,11 +50,6 @@ const RELEASES_LINKS = [
     name: 'Bit Graves',
     url: 'https://bitgraves.bandcamp.com/album/bit-graves',
     details: 'Cassette / digital / streaming, June 2020',
-  },
-  {
-    name: 'Older stuff',
-    url: 'https://bitgraves.bandcamp.com/music',
-    details: '2017-2018',
   },
 ];
 
@@ -206,13 +207,12 @@ const VIDEO_LINKS = [
   },
 ];
 
-let SOCIAL_PREVIEW;
-/* const SOCIAL_PREVIEW = {
-  title: 'Bit Graves - Live at the Wayward Music Series',
-  caption: 'Live video / Sep 15, 2023',
-  category: '',
-  url: 'https://www.youtube.com/watch?v=VzJbEyBwEbE',
-}; */
+const SOCIAL_PREVIEW = {
+  title: 'Wake / Sleep',
+  caption: 'New EP releases May 1, 2026',
+  category: 'releases',
+  url: 'https://bitgraves.bandcamp.com/album/wake-sleep',
+};
 
 const Links = ({ links }) => {
   return (
