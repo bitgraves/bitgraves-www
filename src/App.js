@@ -1,12 +1,7 @@
 import React from 'react';
 import './App.css';
 
-const NEWS_LINKS = [
-  {
-    name: 'Electric Blue Fest',
-    details: 'Apr 18, 2026 at Black Lodge',
-  },
-];
+const NEWS_LINKS = [];
 
 const PRESS_LINKS = [
   {
@@ -55,6 +50,10 @@ const RELEASES_LINKS = [
 
 // can use isHighlight: true
 const LIVE_LINKS = [
+  {
+    name: 'Electric Blue Fest',
+    details: 'Apr 18, 2026 at Black Lodge',
+  },
   {
     name: 'Georgetown Steam Plant Science Fair',
     details: 'Sep 20, 2025',
@@ -209,7 +208,7 @@ const VIDEO_LINKS = [
 
 const SOCIAL_PREVIEW = {
   title: 'Wake / Sleep',
-  caption: 'New EP releases May 1, 2026',
+  caption: 'A new EP from Bit Graves, May 2026',
   category: 'releases',
   url: 'https://bitgraves.bandcamp.com/album/wake-sleep',
 };
@@ -291,7 +290,7 @@ const App = () => {
           <a href="mailto:'contact.bitgraves at gmail'">Contact</a>.
         </p>
       </div>
-      <Section name="upcoming" links={NEWS_LINKS} />
+      {/* <Section name="upcoming" links={NEWS_LINKS} /> */}
       <Section name="releases" links={RELEASES_LINKS} />
       <Section name="press" links={PRESS_LINKS} />
       {moreExpanded ? (
