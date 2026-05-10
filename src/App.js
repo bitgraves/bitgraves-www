@@ -1,7 +1,14 @@
 import React from 'react';
 import './App.css';
 
-const NEWS_LINKS = [];
+const NEWS_LINKS = [
+  {
+    name: 'Sleep 1',
+    details: 'Dream footage / glitch visualizer, May 10, 2026',
+    url: 'https://youtu.be/HmyZK5c-ZZA',
+    isHighlight: true,
+  },
+];
 
 const PRESS_LINKS = [
   {
@@ -18,6 +25,7 @@ const LISTEN_LINKS = [
     url: 'https://open.spotify.com/album/23IjKruZu0RnRqUUqOUy6V?si=ERsVz-8PR6Ccyzt8Uetofg',
   }, */
   { name: 'Apple Music', url: 'https://itunes.apple.com/us/artist/1519835767' },
+  { name: 'YouTube', url: 'https://www.youtube.com/@bit.graves' },
   // { name: 'SoundCloud', url: 'https://soundcloud.com/bitgraves' },
   // { name: 'Tidal', url: 'https://store.tidal.com/us/album/146096838' },
 ];
@@ -155,6 +163,12 @@ const WRITING_LINKS = [
 
 const VIDEO_LINKS = [
   {
+    name: 'Sleep 1',
+    details: 'Dream footage / glitch visualizer, May 10, 2026',
+    url: 'https://youtu.be/HmyZK5c-ZZA',
+    isHighlight: true,
+  },
+  {
     name: 'Live at the Wayward Music Series',
     url: 'https://www.youtube.com/watch?v=VzJbEyBwEbE',
     details: 'September 15, 2023',
@@ -208,7 +222,12 @@ const VIDEO_LINKS = [
 
 const SOCIAL_PREVIEW = {
   title: 'Wake / Sleep',
-  caption: 'A new EP from Bit Graves, May 2026',
+  caption: 'A new EP from Bit Graves, May 2026.',
+  details: (
+    <p>
+      Watch the <a href="https://youtu.be/HmyZK5c-ZZA">video for Sleep 1</a>.
+    </p>
+  ),
   category: 'releases',
   url: 'https://bitgraves.bandcamp.com/album/wake-sleep',
 };
@@ -257,7 +276,7 @@ const Section = ({ name, links }) => {
 
 const SocialPreview = () => {
   if (!SOCIAL_PREVIEW?.title) return null;
-  const { title, url, caption } = SOCIAL_PREVIEW;
+  const { title, url, caption, details } = SOCIAL_PREVIEW;
   return (
     <div id="SocialCTA">
       <a href={url}>
@@ -268,6 +287,7 @@ const SocialPreview = () => {
           {title}
         </a>
         <p className="previewCaption">{caption}</p>
+        <p className="previewDetails">{details}</p>
       </div>
     </div>
   );
@@ -290,7 +310,7 @@ const App = () => {
           <a href="mailto:'contact.bitgraves at gmail'">Contact</a>.
         </p>
       </div>
-      {/* <Section name="upcoming" links={NEWS_LINKS} /> */}
+      <Section name="recent" links={NEWS_LINKS} />
       <Section name="releases" links={RELEASES_LINKS} />
       <Section name="press" links={PRESS_LINKS} />
       {moreExpanded ? (
