@@ -4,6 +4,7 @@ import './App.css';
 const NEWS_LINKS = [
   {
     name: 'Sebastian Camens / Unity Garnish / Bit Graves',
+    url: '/gallery-1412-june-2026/',
     details: 'A/V set at Gallery 1412, June 26, 2026',
     isHighlight: true,
   },
@@ -61,10 +62,6 @@ const RELEASES_LINKS = [
 
 // can use isHighlight: true
 const LIVE_LINKS = [
-  {
-    name: 'Sebastian Camens / Unity Garnish / Bit Graves',
-    details: 'June 26, 2026 at Gallery 1412',
-  },
   {
     name: 'Electric Blue Fest',
     details: 'Apr 18, 2026 at Black Lodge',
