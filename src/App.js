@@ -3,10 +3,14 @@ import './App.css';
 
 const NEWS_LINKS = [
   {
+    name: 'Sebastian Camens / Unity Garnish / Bit Graves',
+    details: 'A/V set at Gallery 1412, June 26, 2026',
+    isHighlight: true,
+  },
+  {
     name: 'Sleep 1',
     details: 'Dream footage / glitch visualizer, May 10, 2026',
     url: 'https://youtu.be/HmyZK5c-ZZA',
-    isHighlight: true,
   },
 ];
 
@@ -42,7 +46,6 @@ const RELEASES_LINKS = [
     name: 'Wake / Sleep',
     url: 'https://bitgraves.bandcamp.com/album/wake-sleep',
     details: 'Digital / streaming, May 1, 2026',
-    isHighlight: true,
   },
   {
     name: 'Murmur',
@@ -58,6 +61,10 @@ const RELEASES_LINKS = [
 
 // can use isHighlight: true
 const LIVE_LINKS = [
+  {
+    name: 'Sebastian Camens / Unity Garnish / Bit Graves',
+    details: 'June 26, 2026 at Gallery 1412',
+  },
   {
     name: 'Electric Blue Fest',
     details: 'Apr 18, 2026 at Black Lodge',
@@ -310,7 +317,7 @@ const App = () => {
           <a href="mailto:'contact.bitgraves at gmail'">Contact</a>.
         </p>
       </div>
-      <Section name="recent" links={NEWS_LINKS} />
+      <Section name="new" links={NEWS_LINKS} />
       <Section name="releases" links={RELEASES_LINKS} />
       <Section name="press" links={PRESS_LINKS} />
       {moreExpanded ? (
