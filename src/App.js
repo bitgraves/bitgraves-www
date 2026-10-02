@@ -3,10 +3,14 @@ import './App.css';
 
 const NEWS_LINKS = [
   {
+    name: 'Electric Blue: Bit Graves + zyzzyva',
+    url: 'https://www.instagram.com/electricblueseries/p/DdUmQNny2CO/',
+    details: 'Sep 21, 2026',
+  },
+  {
     name: 'Sebastian Camens / Unity Garnish / Bit Graves',
     url: '/gallery-1412-june-2026/',
     details: 'A/V set at Gallery 1412, June 26, 2026',
-    isHighlight: true,
   },
   {
     name: 'Sleep 1',
